@@ -497,7 +497,7 @@ object UclidMain {
     if (isConcrete) {
       UclidMain.printVerbose("Starting Concrete Simulation")
       val concreteSimulator = ConcreteSimulator
-      val result = concreteSimulator.execute(module, config)
+      val result = concreteSimulator.execute(module)
       return result
     } else {
       UclidMain.printVerbose("Starting Symbolic Simulation")
